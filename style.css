@@ -1,0 +1,148 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: #11552c;
+    font-family: sans-serif;
+}
+
+nav{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav .left img{
+    width: 70px;
+}
+
+nav .right ul{
+    display: flex;
+    align-items: center;
+}
+
+nav .right ul li{
+    margin-right: 40px;
+}
+
+nav .right ul li a{
+    color: white;
+}
+
+/* Section 1 */
+
+.sec1{
+    width: 100%;
+}
+
+.sec1 .container{
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec1 .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: none;
+}
+
+.sec1 .container .content img{
+    width: 370px;
+}
+
+.sec1 .container .content .left{
+    width: 600px;
+    color: white;
+}
+
+.sec1 .container .content .right{
+    margin-left: 120px;
+}
+
+.sec1 .container .content .left h1{
+    font-size: 55px;
+}
+
+.sec1 .container .content .left p{
+    font-size: 16px;
+    margin: 1.25rem 0;
+}
+
+.sec1 .container .content .left span{
+    color: rgb(84, 243, 105);
+}
+
+.sec1 .container .content .left button{
+    padding: 1rem;
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    background: green;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.sec1 .container .content.active{
+    display: flex;
+}
+
+.choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice img{
+    width: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px){
+    .sec1 .container{
+        flex-direction: column;
+    }
+
+    .sec1 .container .content{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sec1 .container .content .left{
+        text-align: center;
+        width: 90%;
+        margin-bottom: 5em;
+    }
+
+    .sec1 .container .content .right{
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px){
+    nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .sec1 .container .content .right img{
+        width: 90%;
+    }
+}
